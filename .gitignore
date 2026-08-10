@@ -1,0 +1,12 @@
+# Original full-size photos — kept locally, never deployed.
+_source/
+
+# Résumé PDF — kept locally, deliberately not published (contains a phone number).
+data/
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
