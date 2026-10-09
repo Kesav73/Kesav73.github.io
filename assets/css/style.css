@@ -248,21 +248,21 @@ svg.filled { fill: currentColor; stroke: none; }
 .hero-portrait { position: relative; }
 .hero-portrait picture { display: block; }
 
-/* Cut-out portrait floats directly on the page — no frame, no background. */
+/* Photo portrait in a rounded frame. */
 .portrait {
   display: block;
   position: relative;
   width: 300px;
   height: auto;
-  /* drop-shadow follows the silhouette's alpha, unlike box-shadow. */
-  filter: drop-shadow(0 18px 28px rgba(23, 22, 20, .22));
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(23, 22, 20, .22);
 }
-:root[data-theme="dark"] .portrait { filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .6)); }
+:root[data-theme="dark"] .portrait { box-shadow: 0 18px 40px rgba(0, 0, 0, .6); }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .portrait { filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .6)); }
+  :root:not([data-theme="light"]) .portrait { box-shadow: 0 18px 40px rgba(0, 0, 0, .6); }
 }
 
-/* Soft accent disc grounds the figure so it doesn't look like it's floating in space. */
+/* Soft accent glow behind the photo. */
 .hero-portrait::before {
   content: '';
   position: absolute;
