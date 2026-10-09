@@ -38,33 +38,7 @@
   --ease: cubic-bezier(.22, .61, .36, 1);
 }
 
-/* ---------- Tokens: dark ---------- */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg:            #131311;
-    --bg-alt:        #191917;
-    --surface:       #201f1c;
-    --card:          #1d1c19;
-    --panel:         #141412;
-    --text:          #f1eee6;
-    --text-mid:      #c8c3b7;
-    --text-muted:    #948f83;
-    --border:        #2d2c28;
-    --border-strong: #47453e;
-    --accent:        #f4906a;
-    --accent-hover:  #f8a685;
-    --accent-soft:   rgba(244, 144, 106, 0.12);
-    --accent-wash:   #2c2b26;
-    --on-accent:     #1c0e07;
-    --tag-bg:        rgba(241, 238, 230, 0.08);
-    --contact-bg:    #1b1a17;
-    --contact-fg:    #f1eee6;
-    --contact-em:    #f4906a;
-    --shadow-md:     0 6px 22px -10px rgba(0, 0, 0, .6);
-    --shadow-lg:     0 24px 50px -26px rgba(0, 0, 0, .9);
-  }
-}
-
+/* ---------- Tokens: dark (only when chosen with the toggle) ---------- */
 :root[data-theme="dark"] {
   --bg:            #131311;
   --bg-alt:        #191917;
@@ -250,10 +224,6 @@ svg.filled { fill: currentColor; stroke: none; }
 .theme-toggle .icon-moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: none; }
-  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: block; }
-}
 
 /* ---------- Buttons & links ---------- */
 .btn {

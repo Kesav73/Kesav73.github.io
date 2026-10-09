@@ -7,9 +7,7 @@
   var toggle = document.getElementById('themeToggle');
 
   function currentTheme() {
-    var set = root.getAttribute('data-theme');
-    if (set) return set;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
   }
 
   toggle.addEventListener('click', function () {
