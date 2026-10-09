@@ -490,8 +490,8 @@ svg.filled { fill: currentColor; stroke: none; }
 }
 
 .job-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding-top: 10px; }
-.job-date { font-family: var(--font-mono); font-size: .82rem; color: var(--text); }
-.job-loc  { font-size: .88rem; color: var(--text-muted); }
+.job-date { font-family: var(--font-mono); font-size: 1rem; font-weight: 500; color: var(--text); }
+.job-loc  { font-size: .96rem; color: var(--text-muted); }
 .job-now {
   margin-top: 10px;
   padding: 4px 11px;
@@ -662,7 +662,7 @@ svg.filled { fill: currentColor; stroke: none; }
   display: block;
   margin-top: 10px;
   font-family: var(--font-mono);
-  font-size: .78rem;
+  font-size: .92rem;
   color: var(--text-muted);
 }
 .edu-cgpa { text-align: right; flex: none; }
