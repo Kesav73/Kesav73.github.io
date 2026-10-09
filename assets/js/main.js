@@ -37,11 +37,11 @@
       entries.forEach(function (entry, i) {
         if (!entry.isIntersecting) return;
         // Stagger siblings that enter together for a softer cascade.
-        entry.target.style.transitionDelay = (i * 70) + 'ms';
+        entry.target.style.transitionDelay = (Math.min(i, 5) * 70) + 'ms';
         entry.target.classList.add('is-visible');
         observer.unobserve(entry.target);
       });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
 
     items.forEach(function (el) { observer.observe(el); });
   }

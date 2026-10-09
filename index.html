@@ -7,30 +7,37 @@
 <title>Kesav Patneedi — AI / ML Engineer</title>
 <meta name="description" content="Final year DS&amp;AI student at IIT Bhilai with a year of experience building and shipping agentic AI systems across multiple startups.">
 <meta name="author" content="Kesav Patneedi">
+<meta name="theme-color" content="#f5f2ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f0f0d" media="(prefers-color-scheme: dark)">
 
 <link rel="canonical" href="https://kesavpatneedi.in/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kesavpatneedi.in/">
 <meta property="og:title" content="Kesav Patneedi — AI / ML Engineer">
 <meta property="og:description" content="Final year DS&amp;AI student at IIT Bhilai with a year of experience building and shipping agentic AI systems across multiple startups.">
-<!-- TODO: add assets/img/og-cover.png (1200x630) and uncomment for link previews -->
-<!-- <meta property="og:image" content="https://kesavpatneedi.in/assets/img/og-cover.png"> -->
+<meta property="og:image" content="https://kesavpatneedi.in/assets/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kesavpatneedi.in/assets/img/og-cover.png">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23b45309'/%3E%3Ctext x='50' y='71' font-family='Georgia,serif' font-size='62' font-weight='700' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23d9431e'/%3E%3Ctext x='50' y='73' font-family='Georgia,serif' font-size='66' font-style='italic' fill='%23fff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/style.css">
 
 <script>
-  // Set theme before first paint to avoid a flash of the wrong palette.
+  // Set theme before first paint to avoid a flash of the wrong palette,
+  // and flag JS so scroll reveals only hide content when they can show it again.
   (function () {
+    var root = document.documentElement;
+    root.classList.add('js');
     try {
       var saved = localStorage.getItem('theme');
-      if (saved) document.documentElement.setAttribute('data-theme', saved);
+      if (saved) root.setAttribute('data-theme', saved);
     } catch (e) {}
   })();
 </script>
@@ -60,7 +67,7 @@
 
 <header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
-    <a class="brand" href="#top">
+    <a class="brand" href="#top" aria-label="Kesav Patneedi — back to top">
       <span class="brand-mark">K</span>
       <span class="brand-name">Kesav Patneedi</span>
     </a>
@@ -68,14 +75,20 @@
     <nav class="nav" aria-label="Sections">
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
-      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
-      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
-    </button>
+    <div class="header-actions">
+      <a class="header-cta" href="https://drive.google.com/file/d/1349WXrOreI5-PZruISgNs2ND-KJHss4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        Résumé
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/></svg>
+      </a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2 12h2.6M19.4 12H22M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -84,58 +97,81 @@
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
     <div class="wrap hero-grid">
-     <div class="hero-text">
-      <p class="eyebrow reveal">Available for full-time &amp; internship roles</p>
+      <div class="hero-text">
+        <p class="status reveal"><span class="status-dot"></span>Available for full-time &amp; internship roles</p>
 
-      <h1 class="hero-name reveal">Kesav&nbsp;Patneedi</h1>
+        <h1 class="hero-name reveal">Kesav <em>Patneedi</em></h1>
 
-      <p class="hero-role reveal">AI&nbsp;/&nbsp;ML Engineer</p>
+        <p class="hero-role reveal">AI&nbsp;/&nbsp;ML Engineer</p>
 
-      <p class="hero-bio reveal">
-        I'm Kesav, a final year DS&amp;AI student at <strong>IIT&nbsp;Bhilai</strong> with a year of
-        experience building and shipping agentic AI systems across multiple startups. I work across
-        the full stack from LLM agents and RAG pipelines to backend APIs and production deployments.
-        I enjoy working in fast moving environments where I can own things end to end.
-      </p>
+        <p class="hero-bio reveal">
+          I'm Kesav, a final year DS&amp;AI student at <strong>IIT&nbsp;Bhilai</strong> with a year of
+          experience building and shipping agentic AI systems across multiple startups. I work across
+          the full stack from LLM agents and RAG pipelines to backend APIs and production deployments.
+          I enjoy working in fast moving environments where I can own things end to end.
+        </p>
 
-      <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="mailto:kesavpatneedi.work@gmail.com">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H3z"/><path d="m3 7 9 6 9-6"/></svg>
-          Get in touch
-        </a>
-        <a class="btn btn-ghost" href="https://drive.google.com/file/d/1349WXrOreI5-PZruISgNs2ND-KJHss4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5H7a1.5 1.5 0 0 0-1.5 1.5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3.5V8h4.5"/><path d="M9 13h6M9 16.5h6"/></svg>
-          View résumé
-        </a>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="mailto:kesavpatneedi.work@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H3z"/><path d="m3 7 9 6 9-6"/></svg>
+            Get in touch
+          </a>
+          <a class="btn btn-ghost" href="https://drive.google.com/file/d/1349WXrOreI5-PZruISgNs2ND-KJHss4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5H7a1.5 1.5 0 0 0-1.5 1.5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3.5V8h4.5"/><path d="M9 13h6M9 16.5h6"/></svg>
+            View résumé
+          </a>
+
+          <ul class="socials" aria-label="Profiles">
+            <li>
+              <a href="https://github.com/Kesav73" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.9c-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kesav-patneedi-b804932a9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C21.4 8.75 22 11.05 22 14.2V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4Z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <ul class="socials reveal" aria-label="Profiles">
-        <li>
-          <a href="https://github.com/Kesav73" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.9c-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/kesav-patneedi-b804932a9/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C21.4 8.75 22 11.05 22 14.2V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4Z"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:kesavpatneedi.work@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H3z"/><path d="m3 7 9 6 9-6"/></svg>
-          </a>
-        </li>
-      </ul>
-     </div>
+      <div class="hero-portrait reveal">
+        <div class="portrait-frame">
+          <picture>
+            <source srcset="assets/img/portrait.webp" type="image/webp">
+            <img class="portrait" src="assets/img/portrait.png"
+                 alt="Portrait of Kesav Patneedi"
+                 width="760" height="829" fetchpriority="high">
+          </picture>
+        </div>
+        <p class="portrait-note">
+          <span class="portrait-note-label">Currently</span>
+          AI Engineer Intern, Valuai.io
+        </p>
+      </div>
+    </div>
 
-     <div class="hero-portrait reveal">
-       <picture>
-         <source srcset="assets/img/portrait.webp" type="image/webp">
-         <img class="portrait" src="assets/img/portrait.png"
-              alt="Portrait of Kesav Patneedi"
-              width="800" height="800" fetchpriority="high">
-       </picture>
-     </div>
+    <!-- Headline numbers, each taken from the experience and achievements below. -->
+    <div class="wrap">
+      <dl class="stats reveal">
+        <div class="stat">
+          <dt>91%</dt>
+          <dd>diagnostic accuracy from an automated clinical interview <span>Valuai.io</span></dd>
+        </div>
+        <div class="stat">
+          <dt>9% <i>→</i> 1.2%</dt>
+          <dd>hallucinated claims in AI-generated clinical outputs <span>Valuai.io</span></dd>
+        </div>
+        <div class="stat">
+          <dt>132M</dt>
+          <dd>transactions analysed for protection-plan attach rates <span>Assurant</span></dd>
+        </div>
+        <div class="stat">
+          <dt>Top 50</dt>
+          <dd>of 32,000+ teams in the Amazon ML Challenge <span>2026</span></dd>
+        </div>
+      </dl>
     </div>
   </section>
 
@@ -143,40 +179,29 @@
   <section class="section" id="experience">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="section-num">01</span>
+        <p class="kicker">Where I've worked</p>
         <h2>Experience</h2>
       </div>
 
-      <ol class="timeline">
-
-        <li class="job reveal">
-          <div class="job-meta">
-            <span class="job-date">May 2026 — Jul 2026</span>
-            <span class="job-loc">India · Remote</span>
-          </div>
-          <div class="job-body">
-            <h3 class="job-company">Assurant</h3>
-            <p class="job-role">Data Science &amp; AI Intern</p>
-            <ul class="job-points">
-              <li>Developed a <strong>full-stack internal analytics platform across 4,700+ client stores</strong>, generating store-specific natural-language insights and recommendations for client employees.</li>
-              <li>Conducted end-to-end driver analysis over <strong>132M transactions</strong> to identify the key factors influencing protection-plan attach rates.</li>
-              <li>Designed and deployed a <strong>Neo4j knowledge graph</strong> with 140K+ store–driver relationships, enabling real-time store-level performance queries.</li>
-            </ul>
-            <ul class="tags">
-              <li>LLMs</li><li>Neo4j</li><li>Knowledge Graphs</li><li>Python</li><li>Analytics</li>
-            </ul>
-          </div>
-        </li>
+      <ol class="jobs">
 
         <li class="job reveal">
           <div class="job-meta">
             <span class="job-date">Jul 2025 — Present</span>
             <span class="job-loc">US · Remote</span>
+            <span class="job-now">Current role</span>
           </div>
           <div class="job-body">
             <h3 class="job-company">Valuai.io</h3>
             <p class="job-role">AI Engineer Intern</p>
-            <ul class="job-points">
+
+            <ul class="job-stats">
+              <li><strong>91%</strong><span>diagnostic accuracy</span></li>
+              <li><strong>9% → 1.2%</strong><span>hallucinated claims</span></li>
+              <li><strong>62% → 86%</strong><span>plan-scoring accuracy</span></li>
+            </ul>
+
+            <ul class="points">
               <li>Built and deployed an <strong>AI-driven, patient-facing medical application from scratch</strong>, integrating voice agents, AI avatars and LLMs.</li>
               <li>Automated a structured clinical assessment into a live, conversational interview, replicating clinician-grade branching logic using <strong>LangGraph</strong> and achieving <strong>91% diagnostic accuracy</strong>.</li>
               <li>Reduced hallucinations in AI-generated clinical outputs from <strong>9% to 1.2%</strong> of claims using a citation-grounded verification loop with iterative regeneration.</li>
@@ -190,13 +215,39 @@
 
         <li class="job reveal">
           <div class="job-meta">
+            <span class="job-date">May 2026 — Jul 2026</span>
+            <span class="job-loc">India · Remote</span>
+          </div>
+          <div class="job-body">
+            <h3 class="job-company">Assurant</h3>
+            <p class="job-role">Data Science &amp; AI Intern</p>
+
+            <ul class="job-stats">
+              <li><strong>4,700+</strong><span>client stores served</span></li>
+              <li><strong>132M</strong><span>transactions analysed</span></li>
+              <li><strong>140K+</strong><span>graph relationships</span></li>
+            </ul>
+
+            <ul class="points">
+              <li>Developed a <strong>full-stack internal analytics platform across 4,700+ client stores</strong>, generating store-specific natural-language insights and recommendations for client employees.</li>
+              <li>Conducted end-to-end driver analysis over <strong>132M transactions</strong> to identify the key factors influencing protection-plan attach rates.</li>
+              <li>Designed and deployed a <strong>Neo4j knowledge graph</strong> with 140K+ store–driver relationships, enabling real-time store-level performance queries.</li>
+            </ul>
+            <ul class="tags">
+              <li>LLMs</li><li>Neo4j</li><li>Knowledge Graphs</li><li>Python</li><li>Analytics</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-meta">
             <span class="job-date">May 2025 — Jun 2025</span>
             <span class="job-loc">India · Remote</span>
           </div>
           <div class="job-body">
             <h3 class="job-company">ZeTheta Algorithms</h3>
             <p class="job-role">Chatbot Developer Intern</p>
-            <ul class="job-points">
+            <ul class="points">
               <li>Developed a scalable, cost-effective AI chatbot system for FinTech documents using <strong>RAG</strong>.</li>
               <li>Integrated multiple LLMs with fallback logic to maintain high system reliability and performance.</li>
             </ul>
@@ -214,163 +265,239 @@
   <section class="section section-alt" id="projects">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="section-num">02</span>
+        <p class="kicker">Things I've built</p>
         <h2>Projects</h2>
       </div>
 
-      <div class="project-grid">
+      <div class="projects">
 
         <article class="project reveal">
-          <div class="project-top">
+          <figure class="diagram" aria-label="Architecture: a query goes to a supervisor, which directs discover, download and index subagents; Astute RAG consolidates their results into an answer.">
+            <svg viewBox="0 0 460 350" role="img" aria-hidden="true">
+              <g class="d-edge">
+                <path d="M230 50v30"/>
+                <path d="M230 120C230 146 82 134 82 160"/><path d="M230 120v40"/><path d="M230 120C230 146 378 134 378 160"/>
+                <path d="M82 200C82 226 230 214 230 240"/><path d="M230 200v40"/><path d="M378 200C378 226 230 214 230 240"/>
+                <path d="M230 280v28"/>
+              </g>
+              <g class="d-node"><rect x="165" y="10" width="130" height="40" rx="10"/><text x="230" y="35">Query</text></g>
+              <g class="d-node is-key"><rect x="155" y="80" width="150" height="40" rx="10"/><text x="230" y="105">Supervisor</text></g>
+              <g class="d-node"><rect x="20" y="160" width="124" height="40" rx="10"/><text x="82" y="185">Discover</text></g>
+              <g class="d-node"><rect x="168" y="160" width="124" height="40" rx="10"/><text x="230" y="185">Download</text></g>
+              <g class="d-node"><rect x="316" y="160" width="124" height="40" rx="10"/><text x="378" y="185">Index</text></g>
+              <g class="d-node is-key"><rect x="155" y="240" width="150" height="40" rx="10"/><text x="230" y="265">Astute RAG</text></g>
+              <g class="d-node"><rect x="165" y="308" width="130" height="40" rx="10"/><text x="230" y="333">Answer</text></g>
+            </svg>
+          </figure>
+          <div class="project-body">
             <h3>Agentic Financial Document Retrieval System</h3>
-            <a class="project-link" href="https://github.com/Kesav73/Agentic-Retrieval-System" target="_blank" rel="noopener noreferrer" aria-label="Agentic Financial Document Retrieval System on GitHub">
+            <p class="project-desc">
+              An AI system that autonomously finds and analyzes financial documents to answer company-specific queries.
+            </p>
+            <ul class="points">
+              <li>Built a <strong>supervisor–subagent architecture</strong> to autonomously discover, download and index SEC filings, annual reports and financial documents.</li>
+              <li>Applied <strong>Astute RAG</strong> for iterative, source-aware knowledge consolidation, resolving conflicts across multiple retrieved documents for reliable responses.</li>
+              <li>Implemented <strong>multi-hop query decomposition</strong> and financial jargon expansion to improve retrieval accuracy.</li>
+            </ul>
+            <ul class="tags">
+              <li>Multi-Agent</li><li>Astute RAG</li><li>LangGraph</li><li>Vector Search</li>
+            </ul>
+            <a class="text-link" href="https://github.com/Kesav73/Agentic-Retrieval-System" target="_blank" rel="noopener noreferrer">
+              View code on GitHub
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/></svg>
             </a>
           </div>
-          <p class="project-desc">
-            An AI system that autonomously finds and analyzes financial documents to answer company-specific queries.
-          </p>
-          <ul class="job-points">
-            <li>Built a <strong>supervisor–subagent architecture</strong> to autonomously discover, download and index SEC filings, annual reports and financial documents.</li>
-            <li>Applied <strong>Astute RAG</strong> for iterative, source-aware knowledge consolidation, resolving conflicts across multiple retrieved documents for reliable responses.</li>
-            <li>Implemented <strong>multi-hop query decomposition</strong> and financial jargon expansion to improve retrieval accuracy.</li>
-          </ul>
-          <ul class="tags">
-            <li>Multi-Agent</li><li>Astute RAG</li><li>LangGraph</li><li>Vector Search</li>
-          </ul>
         </article>
 
         <article class="project reveal">
-          <div class="project-top">
+          <figure class="diagram" aria-label="Architecture: market, news, social and SEC signals flow through Redis Streams to a multi-agent debate, informed by a FinRL PPO model, which sends trades to the Alpaca API.">
+            <svg viewBox="0 0 460 350" role="img" aria-hidden="true">
+              <g class="d-edge">
+                <path d="M56 48C56 84 230 64 230 100"/><path d="M172 48C172 78 230 70 230 100"/>
+                <path d="M288 48C288 78 230 70 230 100"/><path d="M404 48C404 84 230 64 230 100"/>
+                <path d="M230 140v44"/><path d="M230 224v44"/>
+                <path d="M126 204h34"/>
+              </g>
+              <g class="d-node is-small"><rect x="6" y="10" width="100" height="38" rx="9"/><text x="56" y="34">Market</text></g>
+              <g class="d-node is-small"><rect x="122" y="10" width="100" height="38" rx="9"/><text x="172" y="34">News</text></g>
+              <g class="d-node is-small"><rect x="238" y="10" width="100" height="38" rx="9"/><text x="288" y="34">Social</text></g>
+              <g class="d-node is-small"><rect x="354" y="10" width="100" height="38" rx="9"/><text x="404" y="34">SEC</text></g>
+              <g class="d-node"><rect x="160" y="100" width="140" height="40" rx="10"/><text x="230" y="125">Redis Streams</text></g>
+              <g class="d-node is-key"><rect x="160" y="184" width="140" height="40" rx="10"/><text x="230" y="209">Agent debate</text></g>
+              <g class="d-node"><rect x="6" y="184" width="120" height="40" rx="10"/><text x="66" y="209">FinRL PPO</text></g>
+              <g class="d-node"><rect x="160" y="268" width="140" height="40" rx="10"/><text x="230" y="293">Alpaca API</text></g>
+              <text class="d-label" x="230" y="334">trade execution</text>
+            </svg>
+          </figure>
+          <div class="project-body">
             <h3>Multi-Agent Trading &amp; Portfolio Management System</h3>
-            <a class="project-link" href="https://github.com/Kesav73/MultiAgentic_TradingSystem" target="_blank" rel="noopener noreferrer" aria-label="Multi-Agent Trading and Portfolio Management System on GitHub">
+            <p class="project-desc">
+              An autonomous trading system that makes portfolio decisions using collaborative AI agents.
+            </p>
+            <ul class="points">
+              <li>Built a real-time data pipeline using <strong>Redis Streams</strong> to ingest market, news, social and SEC signals.</li>
+              <li>Designed a <strong>multi-agent architecture</strong> that debates FinRL PPO model signals to make trade decisions.</li>
+              <li>Implemented automated trade execution and portfolio tracking using the <strong>Alpaca API</strong>.</li>
+            </ul>
+            <ul class="tags">
+              <li>Multi-Agent</li><li>Reinforcement Learning</li><li>FinRL</li><li>Redis Streams</li><li>Alpaca</li>
+            </ul>
+            <a class="text-link" href="https://github.com/Kesav73/MultiAgentic_TradingSystem" target="_blank" rel="noopener noreferrer">
+              View code on GitHub
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/></svg>
             </a>
           </div>
-          <p class="project-desc">
-            An autonomous trading system that makes portfolio decisions using collaborative AI agents.
-          </p>
-          <ul class="job-points">
-            <li>Built a real-time data pipeline using <strong>Redis Streams</strong> to ingest market, news, social and SEC signals.</li>
-            <li>Designed a <strong>multi-agent architecture</strong> that debates FinRL PPO model signals to make trade decisions.</li>
-            <li>Implemented automated trade execution and portfolio tracking using the <strong>Alpaca API</strong>.</li>
-          </ul>
-          <ul class="tags">
-            <li>Multi-Agent</li><li>Reinforcement Learning</li><li>FinRL</li><li>Redis Streams</li><li>Alpaca</li>
-          </ul>
         </article>
 
         <article class="project reveal">
-          <div class="project-top">
+          <figure class="diagram" aria-label="Architecture: plaintext passes through XORNet with the round key, then SBoxLayer and PermutationLayer, repeated each round, producing ciphertext.">
+            <svg viewBox="0 0 460 350" role="img" aria-hidden="true">
+              <g class="d-edge">
+                <path d="M230 50v34"/><path d="M230 124v24"/><path d="M230 188v24"/><path d="M230 252v46"/>
+                <path d="M126 104h34"/>
+                <path class="is-loop" d="M312 232h26a12 12 0 0 0 12-12V116a12 12 0 0 0-12-12h-38"/>
+              </g>
+              <g class="d-node is-small"><rect x="160" y="10" width="140" height="40" rx="10"/><text x="230" y="35">Plaintext</text></g>
+              <g class="d-node is-small"><rect x="6" y="84" width="120" height="40" rx="10"/><text x="66" y="109">Round key</text></g>
+              <g class="d-node is-key"><rect x="160" y="84" width="140" height="40" rx="10"/><text x="230" y="109">XORNet</text></g>
+              <g class="d-node is-key"><rect x="160" y="148" width="140" height="40" rx="10"/><text x="230" y="173">SBoxLayer</text></g>
+              <g class="d-node is-key"><rect x="148" y="212" width="164" height="40" rx="10"/><text x="230" y="237">PermutationLayer</text></g>
+              <g class="d-node is-small"><rect x="160" y="298" width="140" height="40" rx="10"/><text x="230" y="323">Ciphertext</text></g>
+              <text class="d-label" x="406" y="164">repeated</text>
+              <text class="d-label" x="406" y="180">each round</text>
+            </svg>
+          </figure>
+          <div class="project-body">
             <h3>Secure Implementation of Cryptographic Ciphers using Deep Neural Networks</h3>
-            <a class="project-link" href="https://github.com/Kesav73/Present_DNN" target="_blank" rel="noopener noreferrer" aria-label="Secure Implementation of Cryptographic Ciphers on GitHub">
+            <p class="project-desc">
+              Block ciphers implemented as neural networks, secured against key retrieval attacks.
+            </p>
+            <ul class="points">
+              <li>Implemented <strong>PRESENT-80 and AES block ciphers</strong> entirely as PyTorch neural networks with fixed deterministic weights, encoding all cryptographic operations as custom NN layers.</li>
+              <li>Designed <strong>XORNet</strong> (ReLU-based), <strong>SBoxLayer</strong> (corner-function detection) and <strong>PermutationLayer</strong> (sparse matrix) as non-trainable PyTorch modules replicating exact cipher operations.</li>
+              <li>Hardened the implementations against <strong>key retrieval attacks</strong>, preserving cryptographic security properties within the neural network framework.</li>
+              <li>Verified correctness against all official test vectors with full <strong>pytest</strong> coverage across S-box, P-layer, key schedule and round key generation.</li>
+            </ul>
+            <ul class="tags">
+              <li>PyTorch</li><li>Cryptography</li><li>PRESENT-80</li><li>AES</li><li>pytest</li>
+            </ul>
+            <a class="text-link" href="https://github.com/Kesav73/Present_DNN" target="_blank" rel="noopener noreferrer">
+              View code on GitHub
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/></svg>
             </a>
           </div>
-          <p class="project-desc">
-            Block ciphers implemented as neural networks, secured against key retrieval attacks.
-          </p>
-          <ul class="job-points">
-            <li>Implemented <strong>PRESENT-80 and AES block ciphers</strong> entirely as PyTorch neural networks with fixed deterministic weights, encoding all cryptographic operations as custom NN layers.</li>
-            <li>Designed <strong>XORNet</strong> (ReLU-based), <strong>SBoxLayer</strong> (corner-function detection) and <strong>PermutationLayer</strong> (sparse matrix) as non-trainable PyTorch modules replicating exact cipher operations.</li>
-            <li>Hardened the implementations against <strong>key retrieval attacks</strong>, preserving cryptographic security properties within the neural network framework.</li>
-            <li>Verified correctness against all official test vectors with full <strong>pytest</strong> coverage across S-box, P-layer, key schedule and round key generation.</li>
-          </ul>
-          <ul class="tags">
-            <li>PyTorch</li><li>Cryptography</li><li>PRESENT-80</li><li>AES</li><li>pytest</li>
-          </ul>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="section" id="skills">
+  <!-- ============ ABOUT: achievements, education, skills ============ -->
+  <section class="section" id="about">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="section-num">03</span>
-        <h2>Technical Skills</h2>
+        <p class="kicker">Background</p>
+        <h2>About</h2>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-group reveal">
-          <h3>AI &amp; LLM</h3>
-          <ul class="tags tags-lg">
-            <li>Python</li><li>LangChain</li><li>LangGraph</li><li>RAG</li><li>Hugging Face</li><li>PyTorch</li><li>AI Agents</li>
-            <li>Unsloth</li><li>QLoRA</li><li>STT</li><li>TTS</li><li>Sarvam AI</li>
-          </ul>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Full Stack</h3>
-          <ul class="tags tags-lg">
-            <li>FastAPI</li><li>React</li><li>MongoDB</li><li>Redis</li><li>Neo4j</li><li>Supabase</li>
-          </ul>
-        </div>
-        <div class="skill-group reveal">
-          <h3>Deployment</h3>
-          <ul class="tags tags-lg">
-            <li>AWS S3</li><li>Bedrock</li><li>EC2</li><li>RDS</li><li>Cognito</li>
-            <li>SNS</li><li>Lambda</li><li>Docker</li><li>Caddy</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="about-grid">
 
-  <!-- ============ EDUCATION ============ -->
-  <section class="section section-alt" id="education">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="section-num">04</span>
-        <h2>Education</h2>
-      </div>
+        <!-- ----- Achievements ----- -->
+        <div class="about-col" id="achievements">
+          <h3 class="about-title reveal">Achievements</h3>
 
-      <div class="edu reveal">
-        <div class="edu-main">
-          <h3>Indian Institute of Technology Bhilai</h3>
-          <p>B.Tech in Data Science and Artificial Intelligence</p>
+          <div class="award reveal">
+            <p class="award-figure">Top 50</p>
+            <div>
+              <h4>Amazon ML Challenge 2026</h4>
+              <p>Ranked among the top 50 teams out of 32,000+ participating teams.</p>
+            </div>
+          </div>
+
+          <div class="award reveal">
+            <p class="award-figure">Lead</p>
+            <div>
+              <h4>Data Science and AI Club, IIT Bhilai</h4>
+              <p>Led the DSAI club in AY 2025 – 2026, organizing hackathons and knowledge-sharing sessions for students.</p>
+            </div>
+          </div>
+
+          <!-- ----- Education ----- -->
+          <h3 class="about-title reveal" id="education">Education</h3>
+
+          <div class="edu reveal">
+            <div class="edu-main">
+              <h4>Indian Institute of Technology Bhilai</h4>
+              <p>B.Tech in Data Science and Artificial Intelligence</p>
+              <span class="edu-date">Aug 2023 — May 2027</span>
+            </div>
+            <p class="edu-cgpa"><strong>8.84</strong><span>CGPA / 10</span></p>
+          </div>
         </div>
-        <div class="edu-side">
-          <span class="edu-date">Aug 2023 — May 2027</span>
-          <span class="edu-cgpa">CGPA <strong>8.84</strong> / 10</span>
+
+        <!-- ----- Skills ----- -->
+        <div class="about-col" id="skills">
+          <h3 class="about-title reveal">Technical Skills</h3>
+
+          <dl class="skills">
+            <div class="skill-row reveal">
+              <dt>AI &amp; LLM</dt>
+              <dd>
+                <ul class="tags tags-lg">
+                  <li>Python</li><li>LangChain</li><li>LangGraph</li><li>RAG</li><li>Hugging Face</li><li>PyTorch</li><li>AI Agents</li>
+                  <li>Unsloth</li><li>QLoRA</li><li>STT</li><li>TTS</li><li>Sarvam AI</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="skill-row reveal">
+              <dt>Full Stack</dt>
+              <dd>
+                <ul class="tags tags-lg">
+                  <li>FastAPI</li><li>React</li><li>MongoDB</li><li>Redis</li><li>Neo4j</li><li>Supabase</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="skill-row reveal">
+              <dt>Deployment</dt>
+              <dd>
+                <ul class="tags tags-lg">
+                  <li>AWS S3</li><li>Bedrock</li><li>EC2</li><li>RDS</li><li>Cognito</li>
+                  <li>SNS</li><li>Lambda</li><li>Docker</li><li>Caddy</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ ACHIEVEMENTS ============ -->
-  <section class="section" id="achievements">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="section-num">05</span>
-        <h2>Achievements</h2>
       </div>
-
-      <ul class="job-points reveal">
-        <li><strong>Amazon ML Challenge 2026:</strong> ranked among the top 50 teams out of 32,000+ participating teams.</li>
-        <li><strong>Data Science and AI Club Lead, IIT Bhilai (AY 2025 – 2026):</strong> led the DSAI club, organizing hackathons and knowledge-sharing sessions for students.</li>
-      </ul>
     </div>
   </section>
 
   <!-- ============ CONTACT ============ -->
-  <section class="section contact" id="contact">
+  <section class="contact" id="contact">
     <div class="wrap">
       <div class="contact-inner reveal">
-        <span class="section-num">06</span>
-        <h2>Get in touch</h2>
-        <p>
+        <p class="kicker">Contact</p>
+        <h2>Get in <em>touch</em></h2>
+        <p class="contact-lede">
           I'm looking for full-time and internship roles. Email is the best way to reach me.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:kesavpatneedi.work@gmail.com">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H3z"/><path d="m3 7 9 6 9-6"/></svg>
-            kesavpatneedi.work@gmail.com
-          </a>
+        <a class="contact-mail" href="mailto:kesavpatneedi.work@gmail.com">
+          kesavpatneedi.work@gmail.com
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8.5 7H17v8.5"/></svg>
+        </a>
+        <div class="contact-actions">
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/kesav-patneedi-b804932a9/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95C21.4 8.75 22 11.05 22 14.2V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4Z"/></svg>
             Connect on LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/Kesav73" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="filled"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.9c-2.78.62-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="https://drive.google.com/file/d/1349WXrOreI5-PZruISgNs2ND-KJHss4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3.5H7a1.5 1.5 0 0 0-1.5 1.5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8z"/><path d="M14 3.5V8h4.5"/><path d="M9 13h6M9 16.5h6"/></svg>
+            View résumé
           </a>
         </div>
       </div>
@@ -382,6 +509,7 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <span>© <span id="year">2026</span> Kesav Patneedi</span>
+    <a href="#top">Back to top ↑</a>
   </div>
 </footer>
 
